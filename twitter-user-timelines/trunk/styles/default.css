@@ -1,0 +1,102 @@
+/* Follow Link */
+.tut-twitter-icon {
+    width:16px;
+    height:16px;
+    display:inline-block;
+    background: url( '../images/twitter-icon.png' );
+    margin-right:4px;
+    vertical-align:middle;
+    position:Relative;
+    top:-1px;
+}
+
+.tut-follow-link {
+    display:inline-block;
+    position:Relative;
+    margin:0 0 11px 0;
+    font-size:0.7em;
+}
+
+/* Whole list of Tweets */
+.tut-tweets {
+    list-style-type:none;
+}
+.tut-tweets li {
+    margin-top:33px;
+}
+.tut-tweets li:first-child {
+    margin:0px;
+}
+
+/* Single Tweet Header */
+.tut-tweet header {
+    margin-bottom:11px;
+}
+
+.tut-profile-image{
+    float:left;
+    margin-right:11px;
+    width:40px;
+    height:40px;
+}
+
+.tut-user {
+    overflow:hidden;
+    line-height:1.4em;
+}
+
+.tut-screen-name {
+    font-size:0.85em;
+    opacity: 0.7;
+}
+
+/* Single Tweet Footer */
+.tut-tweet footer {
+    margin-top:11px;
+    margin-top:11px;
+}
+
+/* Tweet Date */
+.tut-time {
+    font-size:0.85em;
+    float:left;
+    opacity: 0.7;
+}
+
+/* Twitter Actions */
+.tut-actions {
+    overflow:hidden;
+    text-align:right;
+}
+.tut-actions a {
+    margin-left:8px;
+    width:16px;
+    height:16px;
+    display:inline-block;
+    background-image: url('../images/everything-sprite-light.png');
+}
+.tut-theme-dark .tut-actions a{
+    background-image: url('../images/everything-sprite-dark.png');
+}
+
+.tut-actions a:first-child {
+    margin:0px;
+}
+
+.tut-reply:hover {
+    background-position:-16px 0;
+}
+
+.tut-retweet {
+    background-position:-82px 0;
+}
+.tut-retweet:hover {
+    background-position:-101px 0;
+}
+
+.tut-favorite {
+    background-position:-32px 0;
+}
+.tut-favorite:hover {
+    background-position:-48px 0;
+}

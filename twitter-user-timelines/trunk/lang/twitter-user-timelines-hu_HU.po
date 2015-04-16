@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter User Timelines 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-16 18:28+0100\n"
+"PO-Revision-Date: 2015-04-16 18:28+0100\n"
+"Last-Translator: Daniel Pataki <contact@tastique.org>\n"
+"Language-Team: Daniel Pataki <me@danielpataki.com>\n"
+"Language: Hungarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-tut-twitter.php:94
+msgid "Your consumer key or consumer secret is incorrect"
+msgstr "A \"consumer key\" és \"consumer secret\" nem megfelelő"
+
+#: ../class-twitter-user-timeline.php:31
+msgid "Add an arbitrary twitter timeline or tie it to any user profile"
+msgstr ""
+"Adj hozzá egy tetszőleges Twitter folyamot vagy kösd bármely felhasználóhoz"
+
+#: ../class-twitter-user-timeline.php:34
+msgid "Twitter User Timeline"
+msgstr "Twitter Folyam"
+
+#: ../class-twitter-user-timeline.php:62
+#, php-format
+msgid ""
+"Twitter only allows access to its API with authentication. This means you "
+"must create a Twitter application and define the consumer key and consumer "
+"secret of your application in the <a href=\"%s\">plugin settings</a>"
+msgstr ""
+"A Twitter csak autentikációval engedi használni az API-át. Ez azt jelenti, "
+"hogy készítened kell egy Twitter aplikációt amely \"consumer key\" és "
+"\"consumer secret\" adatait a <a href=\"%s\">bővítmény beállításaiban</a> be "
+"kell illeszd."
+
+#: ../class-twitter-user-timeline.php:78
+msgid "Single User"
+msgstr "Egyedi Felhasználó"
+
+#: ../class-twitter-user-timeline.php:79
+msgid "Single User - Overide On Archive Page"
+msgstr "Egyedi Felhasználó - Felülírva a felhasználó archív oldalán"
+
+#: ../class-twitter-user-timeline.php:80
+msgid "Display On Archive Page Only"
+msgstr "Csak Archív Oldalon"
+
+#: ../class-twitter-user-timeline.php:85
+msgid "Title:"
+msgstr "Widget Címke:"
+
+#: ../class-twitter-user-timeline.php:90
+msgid "Tweets To Show:"
+msgstr "Tweet-ek Száma:"
+
+#: ../class-twitter-user-timeline.php:95
+msgid "Widget Type:"
+msgstr "Widget Típusa:"
+
+#: ../class-twitter-user-timeline.php:108
+msgid "Twitter Username:"
+msgstr "Twitter Felhasználónév:"
+
+#: ../class-twitter-user-timeline.php:115
+msgid "Twitter Field:"
+msgstr "Twitter Mező:"
+
+#: ../class-twitter-user-timeline.php:121
+msgid "Theme:"
+msgstr "Színséma:"
+
+#: ../twitter-user-timelines.php:73
+msgid "Twitter Timelines"
+msgstr "Twitter Folyamok"
+
+#: ../twitter-user-timelines.php:109
+msgid "Twitter User Timelines"
+msgstr "Twitter Folyamok"
+
+#: ../twitter-user-timelines.php:116
+msgid "Twitter Consumer Key"
+msgstr "Twitter Consumer Key"
+
+#: ../twitter-user-timelines.php:121
+msgid "Twitter Consumer Secret"
+msgstr "Twitter Consumer Secret"
+
+#: ../twitter-user-timelines.php:136
+msgid ""
+"We tried to verify your consumer key and secret but it seems they are "
+"incorrect. Make sure to copy-paste them from Twitter exactly."
+msgstr ""
+"Úgy tűnik, hogy a megadott \"consumer key\" és \"consumer secret\" nem "
+"helyes. Figyelj arra, hogy egyenesen a Twitter oldaláról másold be ide. "

@@ -1,31 +1,41 @@
-# Twitter User Timelines WordPress Plugin
+=== Twitter User Timelines ===
+Contributors: danielpataki
+Tags: twitter, widget, social
+Requires at least: 3.5.0
+Tested up to: 4.1.1
+Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add Twitter streams to your widget areas. It can detect the current author on archive and single pages and show their tweets only.
 
-## Description
+== Description ==
 
 Twitter User Timelines is a plugin that tries to do Twitter feeds right. Instead of the inflexible Twitter widget I built the whole thing using the REST API. This allows me to use regular ol' HTML and CSS to style everything. It gives **you** a lot of power since you can override the default look in any way you like.
 
 The widget allows you to show different tweets where it makes sense. You can choose to show a post's current author's tweets for example. You can override the default Twitter user on single post, single page and author archive pages.
 
+== Setup ==
 
-## Thanks
+Please note that since the Twitter API requires authentication you will need to create a Twitter application to get a consumer key and secret. This is super easy, I've included instructions in the Installation section.
+
+= Thanks =
 
 * [David Marcu](https://unsplash.com/davidmarcu) for the wonderful photo for the plugin's featured image
 
-## Installation
+== Installation ==
 
-### Automatic Installation
+= Automatic Installation =
 
 Installing this plugin automatically is the easiest option. You can install the plugin automatically by going to the plugins section in WordPress and clicking Add New. Type "Twitter User Timelines" in the search bar and install the plugin by clicking the Install Now button.
 
-### Manual Installation
+= Manual Installation =
 
 To manually install the plugin you'll need to download the plugin to your computer and upload it to your server via FTP or another method. The plugin needs to be extracted in the `wp-content/plugins` folder. Once done you should be able to activate it as usual.
 
 If you are having trouble, take a look at the [Managing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation) section in the WordPress Codex, it has more information on this topic.
 
-## Setting Up
+= Setting Up =
 
 To be able to use the plugin you will need to create a Twitter application. This is super easy! Head on over to the [Twitter Apps](https://apps.twitter.com/) website and log in with your regular Twitter account.
 
@@ -35,17 +45,17 @@ All done! In the next screen you should see four tabs, click on "Keys and Access
 
 The plugin settings can be found in the "Settings" section in your WordPress admin, in the "Twitter Timelines" submenu. Paste the consumer key and secret there.
 
-## Usage
+= Usage =
 
 You can add a Twitter timeline to any widget area you have. Head on over to the "Widgets" sub-section within "Appearance" in the admin. You should see a widget titled "Twitter User Timeline". Drag this into any widget area you have.
 
 Once done you can set the widget "Title", "Tweets To Show" and "Default Twitter Username". Tweets from the default Twitter username will be shown everywhere, unless otherwise specified using the "Show Author Tweets" setting.
 
-### Author Tweets
+= Author Tweets =
 
 The author tweets section allows you to replace the default tweets with ones specific to your authors on single posts, single pages and author archives. If you select "On Posts" for example, the plugin will detect the author of the post and show her/his tweets.
 
-### The Twitter Field
+= The Twitter Field =
 
 The Twitter field is a special setting in the widget which is needed to show the author's Tweets. The plugin of course doesn't know what an author's Twitter name is and there is no default WordPress setting to add this information.
 
@@ -57,6 +67,20 @@ Set a name for your option group (eg: User Settings) and click "+Add Field". Cre
 
 Scroll down a bit until you get to the "Location" options. Under "Show this field group if" set the selector to "User". Now scroll up and save the field group. If you now go to "Users" and click on any user, you should find a Twitter field in her/his profile. Add the user's Twitter username here and the plugin will take care of the rest.
 
-### Theme
+= Theme =
 
 The theme allows you to set a theme to use, light or dark. "Light" should be used when the widget has a light background, "Dark" should be used when the widget has a dark background.
+
+== Screenshots ==
+
+1. Tweets in the Twenty Fifteen theme
+2. The Widget Settings
+3. Tweets in the No Nonsense theme
+4. Tweets in the Twenty Fourteen theme
+4. Tweets in the Hueman theme
+
+== Changelog ==
+
+= 1.0.0 =
+
+* Initial Release.
