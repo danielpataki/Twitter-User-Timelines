@@ -60,3 +60,32 @@ Scroll down a bit until you get to the "Location" options. Under "Show this fiel
 ### Theme
 
 The theme allows you to set a theme to use, light or dark. "Light" should be used when the widget has a light background, "Dark" should be used when the widget has a dark background.
+
+
+## HTML Structure
+
+I've tried to keep the HTML as modular as possible to make it easy for theme authors to modify the looks. The HTML structure of the Twitter feed can be generalized like this:
+
+```
+<a class='tut-follow-link' href=''></a>
+<ul class='tut-tweets tut-theme-[theme]'>
+    <li class='tut-tweet tut-screen-name-[screen_name]' id='tut-tweet-[tweet_id]'>
+        <header>
+            <a href=''><img class='tut-profile-image' src=''>
+            <div class='tut-user'>
+                <div class='tut-user-name'><a href=''></a></div>
+                <div class='tut-screen-name'><a href=''></a></div>
+            </div>
+        </header>
+        <div class='tut-text'></div>
+        <footer>
+            <div class='tut-time'><a href=''></a></div>
+            <div class='tut-actions'>
+                <a class='tut-reply' href=''></a>
+                <a class='tut-retweet' href=''></a>
+                <a class='tut-favorite' href=''></a>
+            </div>
+        <footer>
+    </li>
+</ul>
+```
