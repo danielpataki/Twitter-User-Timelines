@@ -2,11 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter User Timelines 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-16 18:11+0100\n"
-"PO-Revision-Date: 2015-04-16 18:11+0100\n"
+"POT-Creation-Date: 2015-04-16 20:03+0100\n"
+"PO-Revision-Date: 2015-04-16 20:03+0100\n"
 "Last-Translator: Daniel Pataki <contact@tastique.org>\n"
-"Language-Team: Daniel Pataki <me@danielpataki.com>\n"
-"Language: English\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,38 +34,38 @@ msgid ""
 msgstr ""
 
 #: ../class-twitter-user-timeline.php:78
-msgid "Single User"
+msgid "On Posts"
 msgstr ""
 
 #: ../class-twitter-user-timeline.php:79
-msgid "Single User - Overide On Archive Page"
+msgid "On Pages"
 msgstr ""
 
 #: ../class-twitter-user-timeline.php:80
-msgid "Display On Archive Page Only"
+msgid "Author Archive"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:85
+#: ../class-twitter-user-timeline.php:86
 msgid "Title:"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:90
+#: ../class-twitter-user-timeline.php:91
 msgid "Tweets To Show:"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:95
-msgid "Widget Type:"
+#: ../class-twitter-user-timeline.php:96
+msgid "Default Twitter Username:"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:108
-msgid "Twitter Username:"
+#: ../class-twitter-user-timeline.php:101
+msgid "Show Author Tweets:"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:115
+#: ../class-twitter-user-timeline.php:113
 msgid "Twitter Field:"
 msgstr ""
 
-#: ../class-twitter-user-timeline.php:121
+#: ../class-twitter-user-timeline.php:118
 msgid "Theme:"
 msgstr ""
 

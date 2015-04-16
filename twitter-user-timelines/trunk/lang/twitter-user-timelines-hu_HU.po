@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter User Timelines 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-16 18:28+0100\n"
-"PO-Revision-Date: 2015-04-16 18:28+0100\n"
+"POT-Creation-Date: 2015-04-16 20:00+0100\n"
+"PO-Revision-Date: 2015-04-16 20:02+0100\n"
 "Last-Translator: Daniel Pataki <contact@tastique.org>\n"
 "Language-Team: Daniel Pataki <me@danielpataki.com>\n"
 "Language: Hungarian\n"
@@ -40,38 +40,38 @@ msgstr ""
 "kell illeszd."
 
 #: ../class-twitter-user-timeline.php:78
-msgid "Single User"
-msgstr "Egyedi Felhasználó"
+msgid "On Posts"
+msgstr "Bejegyzéseken"
 
 #: ../class-twitter-user-timeline.php:79
-msgid "Single User - Overide On Archive Page"
-msgstr "Egyedi Felhasználó - Felülírva a felhasználó archív oldalán"
+msgid "On Pages"
+msgstr "Oldalakon"
 
 #: ../class-twitter-user-timeline.php:80
-msgid "Display On Archive Page Only"
-msgstr "Csak Archív Oldalon"
+msgid "Author Archive"
+msgstr "Szerző Archívon"
 
-#: ../class-twitter-user-timeline.php:85
+#: ../class-twitter-user-timeline.php:86
 msgid "Title:"
 msgstr "Widget Címke:"
 
-#: ../class-twitter-user-timeline.php:90
+#: ../class-twitter-user-timeline.php:91
 msgid "Tweets To Show:"
 msgstr "Tweet-ek Száma:"
 
-#: ../class-twitter-user-timeline.php:95
-msgid "Widget Type:"
-msgstr "Widget Típusa:"
-
-#: ../class-twitter-user-timeline.php:108
-msgid "Twitter Username:"
+#: ../class-twitter-user-timeline.php:96
+msgid "Default Twitter Username:"
 msgstr "Twitter Felhasználónév:"
 
-#: ../class-twitter-user-timeline.php:115
+#: ../class-twitter-user-timeline.php:101
+msgid "Show Author Tweets:"
+msgstr "Szerző Tweet-jeinek mutatása:"
+
+#: ../class-twitter-user-timeline.php:113
 msgid "Twitter Field:"
 msgstr "Twitter Mező:"
 
-#: ../class-twitter-user-timeline.php:121
+#: ../class-twitter-user-timeline.php:118
 msgid "Theme:"
 msgstr "Színséma:"
 
@@ -98,3 +98,15 @@ msgid ""
 msgstr ""
 "Úgy tűnik, hogy a megadott \"consumer key\" és \"consumer secret\" nem "
 "helyes. Figyelj arra, hogy egyenesen a Twitter oldaláról másold be ide. "
+
+#~ msgid "Single User"
+#~ msgstr "Egyedi Felhasználó"
+
+#~ msgid "Single User - Overide On Archive Page"
+#~ msgstr "Egyedi Felhasználó - Felülírva a felhasználó archív oldalán"
+
+#~ msgid "Display On Archive Page Only"
+#~ msgstr "Csak Archív Oldalon"
+
+#~ msgid "Widget Type:"
+#~ msgstr "Widget Típusa:"
