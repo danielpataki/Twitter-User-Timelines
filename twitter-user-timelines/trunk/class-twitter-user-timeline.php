@@ -276,6 +276,19 @@ class Twitter_User_Timeline extends WP_Widget
         echo $args['after_widget'];
     }
 
+    /**
+     * Determine Twitter Screen Name
+     * 
+     * Determines the Twitter user to show tweets for. This is a
+     * factor of the given default username, the overrides and
+     * the type of page we are currently on .
+     * 
+     * @param array $instance The widget details
+     * @return string Twitter screen name
+     * @author Daniel Pataki
+     * @since 1.0.0
+     * 
+     */
     function determine_screen_name( $instance ) {
         $screen_name = empty( $instance['username'] ) ? 'WordPress' : $instance['username'];
 
