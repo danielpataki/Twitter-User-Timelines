@@ -102,7 +102,7 @@ class Twitter_User_Timeline extends WP_Widget
                     <?php
                         $i=0;
                         foreach( $override_options as $value => $name ) :
-                            $checked = ( in_array( $value, $instance['override'] ) ) ? 'checked="checked"' : '';
+                            $checked = ( in_array( $value, $override ) ) ? 'checked="checked"' : '';
                     ?>
                         <input <?php echo $checked ?> type='checkbox' id="<?php echo $this->get_field_id( 'override' ); ?>-<?php echo $i ?>" name="<?php echo $this->get_field_name( 'override' ); ?>[]" value='<?php echo $value ?>'> <label for='<?php echo $this->get_field_id( 'override' ); ?>-<?php echo $i ?>'><?php echo $name ?> <br>
                     <?php $i++; endforeach ?>
@@ -114,12 +114,12 @@ class Twitter_User_Timeline extends WP_Widget
                     <input class="widefat" id="<?php echo $this->get_field_id( 'twitter_field' ); ?>" name="<?php echo $this->get_field_name( 'twitter_field' ); ?>" type="text" value="<?php echo esc_attr( $twitter_field ); ?>" />
                 </p>
 
-				<p>
+                <p>
                     <label for="<?php echo $this->get_field_name( 'theme' ); ?>"><?php _e( 'Theme:', 'twitter-user-timelines' ) ?> </label><br>
 
-				    <input <?php checked( $theme, 'light' ) ?> class="widefat" id="<?php echo $this->get_field_id( 'theme' ); ?>_light" name="<?php echo $this->get_field_name( 'theme' ); ?>" type="radio" value='light' /> <label for="<?php echo $this->get_field_id( 'theme' ); ?>_light"> Light </label><br>
+                    <input <?php checked( $theme, 'light' ) ?> class="widefat" id="<?php echo $this->get_field_id( 'theme' ); ?>_light" name="<?php echo $this->get_field_name( 'theme' ); ?>" type="radio" value='light' /> <label for="<?php echo $this->get_field_id( 'theme' ); ?>_light"> Light </label><br>
 
-					<input <?php checked( $theme, 'dark' ) ?> class="widefat" id="<?php echo $this->get_field_id( 'theme' ); ?>_dark" name="<?php echo $this->get_field_name( 'theme' ); ?>" type="radio" value='dark' /> <label for="<?php echo $this->get_field_id( 'theme' ); ?>_dark"> Dark </label>
+                    <input <?php checked( $theme, 'dark' ) ?> class="widefat" id="<?php echo $this->get_field_id( 'theme' ); ?>_dark" name="<?php echo $this->get_field_name( 'theme' ); ?>" type="radio" value='dark' /> <label for="<?php echo $this->get_field_id( 'theme' ); ?>_dark"> Dark </label>
 
                 </p>
 
@@ -221,8 +221,8 @@ class Twitter_User_Timeline extends WP_Widget
     public function widget( $args, $instance ) {
 
         // Enqueue assets
-		wp_enqueue_script( 'twitter-widgets' );
-		wp_enqueue_style( 'tut-style' );
+        wp_enqueue_script( 'twitter-widgets' );
+        wp_enqueue_style( 'tut-style' );
 
         // Determine whose timeline is shown
         $screen_name = $this->determine_screen_name( $instance );
@@ -238,35 +238,35 @@ class Twitter_User_Timeline extends WP_Widget
         }
 
         // Follow link
-    	echo '<a class="tut-follow-link" href="https://twitter.com/intent/follow?screen_name=' . $tweets[0]['user']['screen_name'] . '"><span class="tut-twitter-icon"></span> follow @' . $tweets[0]['user']['screen_name'] . '</a>';
+        echo '<a class="tut-follow-link" href="https://twitter.com/intent/follow?screen_name=' . $tweets[0]['user']['screen_name'] . '"><span class="tut-twitter-icon"></span> follow @' . $tweets[0]['user']['screen_name'] . '</a>';
 
         // Start the tweet list
         echo '<ul class="tut-tweets tut-theme-' . $instance['theme'] . '">';
         foreach( $tweets as $tweet ) {
 
         // Individual tweets
-		?>
-			<li class='tut-tweet tut-screen-name-<?php echo $tweet['user']['screen_name'] ?>' id='tut-tweet-<?php echo $tweet['id'] ?>'>
-				<header>
-					<a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'><img class='tut-profile-image' src='<?php echo $tweet['user']['profile_image_url'] ?>'></a>
-					<div class='tut-user'>
-						<div class='tut-user-name'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'><?php echo $tweet['user']['name'] ?></a></div>
-						<div class='tut-screen-name'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'>@<?php echo $tweet['user']['screen_name'] ?></a></div>
-					</div>
-				</header>
-				<div class='tut-text'><?php echo $this->format_tweet_text( $tweet ) ?></div>
+        ?>
+            <li class='tut-tweet tut-screen-name-<?php echo $tweet['user']['screen_name'] ?>' id='tut-tweet-<?php echo $tweet['id'] ?>'>
+                <header>
+                    <a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'><img class='tut-profile-image' src='<?php echo $tweet['user']['profile_image_url'] ?>'></a>
+                    <div class='tut-user'>
+                        <div class='tut-user-name'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'><?php echo $tweet['user']['name'] ?></a></div>
+                        <div class='tut-screen-name'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>'>@<?php echo $tweet['user']['screen_name'] ?></a></div>
+                    </div>
+                </header>
+                <div class='tut-text'><?php echo $this->format_tweet_text( $tweet ) ?></div>
 
-				<footer>
-					<div class='tut-time'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>/status/<?php echo $tweet['id'] ?>'><?php echo date( 'd F, Y', strtotime( $tweet['created_at'] ) ) ?></a></div>
+                <footer>
+                    <div class='tut-time'><a href='http://twitter.com/<?php echo $tweet['user']['screen_name'] ?>/status/<?php echo $tweet['id'] ?>'><?php echo date( 'd F, Y', strtotime( $tweet['created_at'] ) ) ?></a></div>
 
-					<div class='tut-actions'>
-						<a class='tut-reply' href="https://twitter.com/intent/tweet?in_reply_to=<?php echo $tweet['id'] ?>"></a>
-						<a class='tut-retweet' href="https://twitter.com/intent/retweet?tweet_id=<?php echo $tweet['id'] ?>"></a>
-						<a class='tut-favorite' href="https://twitter.com/intent/favorite?tweet_id=<?php echo $tweet['id'] ?>"></a>
-					</div>
-				</footer>
-			</li>
-		<?php
+                    <div class='tut-actions'>
+                        <a class='tut-reply' href="https://twitter.com/intent/tweet?in_reply_to=<?php echo $tweet['id'] ?>"></a>
+                        <a class='tut-retweet' href="https://twitter.com/intent/retweet?tweet_id=<?php echo $tweet['id'] ?>"></a>
+                        <a class='tut-favorite' href="https://twitter.com/intent/favorite?tweet_id=<?php echo $tweet['id'] ?>"></a>
+                    </div>
+                </footer>
+            </li>
+        <?php
 
         // End tweet list
         }
@@ -332,23 +332,23 @@ class Twitter_User_Timeline extends WP_Widget
      * @since 1.0.0
      *
      */
-	function format_tweet_text( $tweet ) {
-		$text = $tweet['text'];
+    function format_tweet_text( $tweet ) {
+        $text = $tweet['text'];
 
-		foreach( $tweet['entities']['urls'] as $url ) {
-			$tweet['text'] = str_replace( $url['url'], '<a href="' . $url['url'] . '">' . $url['url'] . '</a>', $tweet['text'] );
-		}
+        foreach( $tweet['entities']['urls'] as $url ) {
+            $tweet['text'] = str_replace( $url['url'], '<a href="' . $url['url'] . '">' . $url['url'] . '</a>', $tweet['text'] );
+        }
 
-		foreach( $tweet['entities']['user_mentions'] as $mention ) {
-			$tweet['text'] = str_replace( '@' . $mention['screen_name'], '<a href="http://twitter.com/' . $mention['screen_name'] . '">@' . $mention['screen_name'] . '</a>', $tweet['text'] );
-		}
+        foreach( $tweet['entities']['user_mentions'] as $mention ) {
+            $tweet['text'] = str_replace( '@' . $mention['screen_name'], '<a href="http://twitter.com/' . $mention['screen_name'] . '">@' . $mention['screen_name'] . '</a>', $tweet['text'] );
+        }
 
-		foreach( $tweet['entities']['hashtags'] as $hashtag ) {
-			$tweet['text'] = str_replace( '#' . $hashtag['text'], '<a href="https://twitter.com/hashtag/' . $hashtag['text'] . '">#' . $hashtag['text'] . '</a>', $tweet['text'] );
-		}
+        foreach( $tweet['entities']['hashtags'] as $hashtag ) {
+            $tweet['text'] = str_replace( '#' . $hashtag['text'], '<a href="https://twitter.com/hashtag/' . $hashtag['text'] . '">#' . $hashtag['text'] . '</a>', $tweet['text'] );
+        }
 
-		return $tweet['text'];
-	}
+        return $tweet['text'];
+    }
 
 }
 
