@@ -108,9 +108,14 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 2. The Widget Settings
 3. Tweets in the No Nonsense theme
 4. Tweets in the Twenty Fourteen theme
-4. Tweets in the Hueman theme
+5. Tweets in the Hueman theme
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fixed a minor issue with overrides
+
 
 = 1.0.0 =
 

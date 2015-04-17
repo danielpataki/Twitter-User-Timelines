@@ -2,7 +2,7 @@
 /*
 Plugin Name:       Twitter User Timelines
 Description:       A flexiblbe widget that allows you to show an arbitrary Twitter timeline. It can also be tied to user profiles to show Twitter timelines for each of your users on author archive pages.
-Version:           1.0.0
+Version:           1.0.1
 Author:            Daniel Pataki
 Author URI:        http://danielpataki.com/
 License:           GPLv2 or later
