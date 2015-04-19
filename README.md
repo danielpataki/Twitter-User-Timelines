@@ -13,54 +13,27 @@ The widget allows you to show different tweets where it makes sense. You can cho
 
 * [David Marcu](https://unsplash.com/davidmarcu) for the wonderful photo for the plugin's featured image
 
-## Installation
+## Basics
 
-### Automatic Installation
+This Github repository is for the development of this plugin. If you would like to read installation and in-depth usage instructions you might want to look at the WordPress plugin page instead.
 
-Installing this plugin automatically is the easiest option. You can install the plugin automatically by going to the plugins section in WordPress and clicking Add New. Type "Twitter User Timelines" in the search bar and install the plugin by clicking the Install Now button.
+* [Plugin Page](https://wordpress.org/plugins/twitter-user-timelines/)
+* [SVN Repository](http://plugins.svn.wordpress.org/twitter-user-timelines/)
 
-### Manual Installation
-
-To manually install the plugin you'll need to download the plugin to your computer and upload it to your server via FTP or another method. The plugin needs to be extracted in the `wp-content/plugins` folder. Once done you should be able to activate it as usual.
-
-If you are having trouble, take a look at the [Managing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation) section in the WordPress Codex, it has more information on this topic.
 
 ## Setting Up
 
-To be able to use the plugin you will need to create a Twitter application. This is super easy! Head on over to the [Twitter Apps](https://apps.twitter.com/) website and log in with your regular Twitter account.
-
-Click the "Create New App" button. Type a name, a description and a Website for your app. The website should be the site you will be using the plugin on. Agree to the developer agreement and click the "Create your Twitter Application" button.
-
-All done! In the next screen you should see four tabs, click on "Keys and Access Tokens". The first section should list your consumer key and consumer secret. You will need to paste these into the plugin settings.
-
-The plugin settings can be found in the "Settings" section in your WordPress admin, in the "Twitter Timelines" submenu. Paste the consumer key and secret there.
+To be able to use the plugin you will need to create a [Twitter application](https://apps.twitter.com/). You'll need the consumer key and the consumer secret it generates, paste it into the Twitter Timelines settings.
 
 ## Usage
 
-You can add a Twitter timeline to any widget area you have. Head on over to the "Widgets" sub-section within "Appearance" in the admin. You should see a widget titled "Twitter User Timeline". Drag this into any widget area you have.
-
-Once done you can set the widget "Title", "Tweets To Show" and "Default Twitter Username". Tweets from the default Twitter username will be shown everywhere, unless otherwise specified using the "Show Author Tweets" setting.
-
-### Author Tweets
-
-The author tweets section allows you to replace the default tweets with ones specific to your authors on single posts, single pages and author archives. If you select "On Posts" for example, the plugin will detect the author of the post and show her/his tweets.
+Usage is pretty self-explanatory, if you bump into something you don't understand just head on over to the [Plugin Page](https://wordpress.org/plugins/twitter-user-timelines/). The "Twitter Field" setting is the only one which may cause some confusion.
 
 ### The Twitter Field
 
 The Twitter field is a special setting in the widget which is needed to show the author's Tweets. The plugin of course doesn't know what an author's Twitter name is and there is no default WordPress setting to add this information.
 
-If you have already added a Twitter field via a plugin find out which usermeta field name it uses, try asking the developer if it isn't obvious.
-
-You can also add a custom field yourself using the awesome [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) plugin. Once installed, go to the new "Custom Fields" section in the admin and click on "Add New" up top.
-
-Set a name for your option group (eg: User Settings) and click "+Add Field". Create a text field with the label "Twitter". Note the field name, this is what you will need to paste into the Widget's "Twitter Field" field.
-
-Scroll down a bit until you get to the "Location" options. Under "Show this field group if" set the selector to "User". Now scroll up and save the field group. If you now go to "Users" and click on any user, you should find a Twitter field in her/his profile. Add the user's Twitter username here and the plugin will take care of the rest.
-
-### Theme
-
-The theme allows you to set a theme to use, light or dark. "Light" should be used when the widget has a light background, "Dark" should be used when the widget has a dark background.
-
+Using the "Twitter Field" users can tell the plugin which usermeta field it should search for. You can add this using your own meta box or you can use [ACF](https://wordpress.org/plugins/advanced-custom-fields/)
 
 ## HTML Structure
 
@@ -89,3 +62,13 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
     </li>
 </ul>
 ```
+
+
+
+# Want To Help?
+
+If you like the plugin and you like helping others out there are a few things you can do:
+
+* **[Review the plugin](https://wordpress.org/support/view/plugin-reviews/twitter-user-timelines)**: A good review never hurts and constructive criticism makes products better :)
+* **Submit a translation** If you speak another language goodly you can submit a language file, I'd be mighty thankful! Take a look at the lang directory to see what languages we already have. If a language isn't there create one and submit a pull request. If you have no idea what I'm talking about drop me a line and I'll help you out
+* **[Tip me on Gratipay](https://gratipay.com/danielpataki/)** 
