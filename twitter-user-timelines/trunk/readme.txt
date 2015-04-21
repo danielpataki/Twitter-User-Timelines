@@ -15,7 +15,7 @@ Twitter User Timelines is a plugin that tries to do Twitter feeds right. Instead
 
 The widget allows you to show different tweets where it makes sense. You can choose to show a post's current author's tweets for example. You can override the default Twitter user on single post, single page and author archive pages.
 
-== Setup ==
+= Setup =
 
 Please note that since the Twitter API requires authentication you will need to create a Twitter application to get a consumer key and secret. This is super easy, I've included instructions in the Installation section.
 
