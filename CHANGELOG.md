@@ -1,7 +1,9 @@
 ### 1.0.3 (2015-04-21)
 
 - Fixed empty override array issue
-- Added some missing translations 
+- Added some missing translations
+- Added a check for the @ character in usernames, just in case
+- Added empty checks to tweet entities
 
 ### 1.0.2 (2015-04-21)
 

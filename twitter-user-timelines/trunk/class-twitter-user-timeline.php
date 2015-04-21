@@ -342,16 +342,22 @@ class Twitter_User_Timeline extends WP_Widget
     function format_tweet_text( $tweet ) {
         $text = $tweet['text'];
 
-        foreach( $tweet['entities']['urls'] as $url ) {
-            $tweet['text'] = str_replace( $url['url'], '<a href="' . $url['url'] . '">' . $url['url'] . '</a>', $tweet['text'] );
+        if( !empty( $tweet['entities']['urls'] ) ) {
+            foreach( $tweet['entities']['urls'] as $url ) {
+                $tweet['text'] = str_replace( $url['url'], '<a href="' . $url['url'] . '">' . $url['url'] . '</a>', $tweet['text'] );
+            }
         }
 
-        foreach( $tweet['entities']['user_mentions'] as $mention ) {
-            $tweet['text'] = str_replace( '@' . $mention['screen_name'], '<a href="http://twitter.com/' . $mention['screen_name'] . '">@' . $mention['screen_name'] . '</a>', $tweet['text'] );
+        if( !empty( $tweet['entities']['user_mentions'] ) ) {
+            foreach( $tweet['entities']['user_mentions'] as $mention ) {
+                $tweet['text'] = str_replace( '@' . $mention['screen_name'], '<a href="http://twitter.com/' . $mention['screen_name'] . '">@' . $mention['screen_name'] . '</a>', $tweet['text'] );
+            }
         }
 
-        foreach( $tweet['entities']['hashtags'] as $hashtag ) {
-            $tweet['text'] = str_replace( '#' . $hashtag['text'], '<a href="https://twitter.com/hashtag/' . $hashtag['text'] . '">#' . $hashtag['text'] . '</a>', $tweet['text'] );
+        if( !empty( $tweet['entities']['hashtags'] ) ) {
+            foreach( $tweet['entities']['hashtags'] as $hashtag ) {
+                $tweet['text'] = str_replace( '#' . $hashtag['text'], '<a href="https://twitter.com/hashtag/' . $hashtag['text'] . '">#' . $hashtag['text'] . '</a>', $tweet['text'] );
+            }
         }
 
         return $tweet['text'];

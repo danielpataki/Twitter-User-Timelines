@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Twitter User Timelines 1.0.2\n"
+"Project-Id-Version: Twitter User Timelines 1.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-16 20:00+0100\n"
-"PO-Revision-Date: 2015-04-21 20:02+0100\n"
-"Last-Translator: Daniel Pataki <hello@danielpataki.com>\n"
+"POT-Creation-Date: 2015-04-21 16:22+0100\n"
+"PO-Revision-Date: 2015-04-21 16:23+0100\n"
+"Last-Translator: Daniel Pataki <contact@tastique.org>\n"
 "Language-Team: Daniel Pataki <hello@danielpataki.com>\n"
 "Language: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -74,6 +74,14 @@ msgstr "Twitter Mező:"
 #: ../class-twitter-user-timeline.php:118
 msgid "Theme:"
 msgstr "Színséma:"
+
+#: ../class-twitter-user-timeline.php:120
+msgid "Light"
+msgstr "Világos"
+
+#: ../class-twitter-user-timeline.php:122
+msgid "Dark"
+msgstr "Sötét"
 
 #: ../twitter-user-timelines.php:73
 msgid "Twitter Timelines"
