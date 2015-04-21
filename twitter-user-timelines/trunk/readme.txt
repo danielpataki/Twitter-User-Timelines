@@ -2,7 +2,7 @@
 Contributors: danielpataki
 Tags: twitter, widget, social
 Requires at least: 3.5.0
-Tested up to: 4.1.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -112,10 +112,13 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 == Changelog ==
 
+= 1.0.2 (2015-04-21) =
+
+* WordPress 4.2 compatibility check
+
 = 1.0.1 =
 
 * Fixed a minor issue with overrides
-
 
 = 1.0.0 =
 

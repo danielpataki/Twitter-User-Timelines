@@ -74,6 +74,6 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 If you like the plugin and you like helping others out there are a few things you can do:
 
-* **[Review the plugin](https://wordpress.org/support/view/plugin-reviews/twitter-user-timelines)**: A good review never hurts and constructive criticism makes products better :)
-* **Submit a translation** If you speak another language goodly you can submit a language file, I'd be mighty thankful! Take a look at the lang directory to see what languages we already have. If a language isn't there create one and submit a pull request. If you have no idea what I'm talking about drop me a line and I'll help you out
+* **[Review the plugin](https://wordpress.org/support/view/plugin-reviews/twitter-user-timelines)**
+* **Submit a translation** If you speak another language goodly, you can submit a language file, I'd be mighty thankful! Take a look at the lang directory to see what languages we already have. If a language isn't there create one and submit a pull request. If you have no idea what I'm talking about drop me a line and I'll help you out
 * **[Tip me on Gratipay](https://gratipay.com/danielpataki/)**
