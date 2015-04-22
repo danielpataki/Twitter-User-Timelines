@@ -112,6 +112,10 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 == Changelog ==
 
+= 1.0.4 (2015-04-22) =
+
+* Fixed twitter action icons not showing up
+
 = 1.0.3 (2015-04-21) =
 
 * Fixed some minor bugs

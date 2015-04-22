@@ -1,3 +1,7 @@
+### 1.0.4 (2015-04-22)
+
+- Fixed twitter action icons not showing up
+
 ### 1.0.3 (2015-04-21)
 
 - Fixed empty override array issue

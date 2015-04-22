@@ -73,8 +73,13 @@
     width:16px;
     height:16px;
     display:inline-block;
-    background-image: url('../images/everything-sprite.png');
+    background-image: url('../images/everything-sprite-light.png');
 }
+.tut-theme-dark .tut-actions a{
+    background-image: url('../images/everything-sprite-dark.png');
+}
+
+
 .tut-actions a:first-child {
     margin:0px;
 }
