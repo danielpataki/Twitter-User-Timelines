@@ -1,0 +1,22 @@
+/* TEAM */
+
+Name: Daniel Pataki
+Title: Founding Developer
+Twitter: danielpataki
+
+/* THANKS */
+
+Name: WordPress
+Website: http://wordpress.org
+
+Name: Twitter
+Website: http://twitter.com
+
+Name: David Marcu
+Website: https://unsplash.com/davidmarcu
+
+
+/* META */
+Updated: 2015/01/07
+Software: WordPress
+See: http://humanstxt.org/
