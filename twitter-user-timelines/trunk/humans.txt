@@ -8,15 +8,17 @@ Twitter: danielpataki
 
 Name: WordPress
 Website: http://wordpress.org
+For: Making WordPress
 
 Name: Twitter
 Website: http://twitter.com
+For: Making Twitter
 
 Name: David Marcu
 Website: https://unsplash.com/davidmarcu
-
+For: The awesome photo for the featured image
 
 /* META */
-Updated: 2015/04/20
+Updated: 2015/04/22
 Software: WordPress
 See: http://humanstxt.org/
