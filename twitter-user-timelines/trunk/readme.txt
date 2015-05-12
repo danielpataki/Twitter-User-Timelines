@@ -112,6 +112,9 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 == Changelog ==
 
+= 1.0.5 (2015-05-12) =
+* Added widget_title filter to the widget title
+
 = 1.0.4 (2015-04-22) =
 
 * Fixed twitter action icons not showing up

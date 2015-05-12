@@ -238,8 +238,7 @@ class Twitter_User_Timeline extends WP_Widget
         echo $args['before_widget'];
 
         if( !empty( $instance['title'] ) ) {
-            echo $args['before_title'] . $instance['title'] . $args['after_title'];
-        }
+            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $args['after_title'];        }
 
         // Follow link
         echo '<a class="tut-follow-link" href="https://twitter.com/intent/follow?screen_name=' . $tweets[0]['user']['screen_name'] . '"><span class="tut-twitter-icon"></span> follow @' . $tweets[0]['user']['screen_name'] . '</a>';
