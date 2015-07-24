@@ -69,7 +69,7 @@ class Twitter_User_Timeline extends WP_Widget
             $title = ( !empty( $instance['title'] ) ) ? $instance['title'] : '';
             $theme = ( !empty( $instance['theme'] ) ) ? $instance['theme'] : 'light';
             $count = ( !empty( $instance['count'] ) ) ? $instance['count'] : 5;
-            $username = ( !empty( $instance['username'] ) ) ? $instance['username'] : 'WordPress';
+            $username = ( !empty( $instance['username'] ) ) ? $instance['username'] : '';
             $override = ( !empty( $instance['override'] ) ) ? $instance['override'] : array();
             $twitter_field = ( !empty( $instance['twitter_field'] ) ) ? $instance['twitter_field'] : '';
 
@@ -223,13 +223,15 @@ class Twitter_User_Timeline extends WP_Widget
      *
      */
     public function widget( $args, $instance ) {
+        // Determine whose timeline is shown
+        $screen_name = $this->determine_screen_name( $instance );
 
+        if( empty($screen_name ) ) {
+            return;
+        }
         // Enqueue assets
         wp_enqueue_script( 'twitter-widgets' );
         wp_enqueue_style( 'tut-style' );
-
-        // Determine whose timeline is shown
-        $screen_name = $this->determine_screen_name( $instance );
 
         // Get timeline
         $tweets = $this->get_tweets( $screen_name, $instance['count'] );
@@ -293,7 +295,7 @@ class Twitter_User_Timeline extends WP_Widget
      *
      */
     function determine_screen_name( $instance ) {
-        $screen_name = empty( $instance['username'] ) ? 'WordPress' : $instance['username'];
+        $screen_name = $instance['username'];
 
         if( is_author() && in_array( 'author_archive', $instance['override'] ) ) {
             $author = get_user_by( 'slug', get_query_var( 'author_name' ) );

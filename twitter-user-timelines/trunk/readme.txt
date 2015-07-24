@@ -112,6 +112,9 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 == Changelog ==
 
+= 1.0.6 (2015-07-24) =
+* Default twitter handle can now be empty
+
 = 1.0.5 (2015-05-12) =
 * Added widget_title filter to the widget title
 
