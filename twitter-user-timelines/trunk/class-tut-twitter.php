@@ -147,6 +147,51 @@ class Tut_Twitter {
         return false;
     }
 
+    /**
+     * Get List Tweets
+     *
+     * Gets a list of tweets from a list
+     *
+     * @param string $list_name The name of the list
+     * @param string $owner The name of the list owner
+     * @param int $count The number of tweets to retrieve
+     * @return array The retrieved tweets
+     * @uses get_bearer_token();
+     * @author Daniel Pataki
+     * @since 1.0.0
+     *
+     */
+    function get_list_tweets( $list_name, $owner, $count = 10 ) {
+
+        // Get bearer token if not set
+        if( empty( $this->bearer_token ) ) {
+            $this->get_bearer_token();
+        }
+
+        // Set API request parameters
+        $params = array(
+            'count' => $count,
+            'slug' => $list_name,
+            'owner_screen_name' => $owner,
+        );
+
+        $params = http_build_query( $params );
+
+        // Retrieve tweets from Twitter
+        $request = wp_remote_get('https://api.twitter.com/1.1/lists/statuses.json?' . $params, array(
+            'headers' => array(
+                'Authorization' => 'Bearer ' . $this->bearer_token,
+            ),
+        ));
+
+        // If everything is ok return the tweets
+        if( $request['response']['code'] == 200 ) {
+            return json_decode( $request['body'], true );
+        }
+
+        return false;
+    }
+
 }
 
 ?>

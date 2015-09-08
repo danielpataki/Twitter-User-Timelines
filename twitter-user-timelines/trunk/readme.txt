@@ -112,6 +112,9 @@ I've tried to keep the HTML as modular as possible to make it easy for theme aut
 
 == Changelog ==
 
+= 1.0.7 (2015-09-08) =
+* Added list handling on the backend only, frontend on the way
+
 = 1.0.6 (2015-07-24) =
 * Default twitter handle can now be empty
 

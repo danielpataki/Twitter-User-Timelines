@@ -19,6 +19,6 @@ Website: https://unsplash.com/davidmarcu
 For: The awesome photo for the featured image
 
 /* META */
-Updated: 2015/07/24
+Updated: 2015/09/09
 Software: WordPress
 See: http://humanstxt.org/
