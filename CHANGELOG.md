@@ -1,3 +1,6 @@
+### 1.0.8 (2015-10-09)
+- Better logic for author detection
+
 ### 1.0.7 (2015-09-08)
 - Added list handling on the backend only, frontend on the way
 

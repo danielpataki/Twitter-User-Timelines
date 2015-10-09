@@ -299,6 +299,10 @@ class Twitter_User_Timeline extends WP_Widget
 
         if( is_author() && in_array( 'author_archive', $instance['override'] ) ) {
             $author = get_user_by( 'slug', get_query_var( 'author_name' ) );
+            if( empty( $author ) ) {
+                global $wp_query;
+                $author = get_user_by( 'slug', $wp_query->query['author_name'] );
+            }
             $user_screen_name = get_user_meta( $author->ID, $instance['twitter_field'], true );
             if( !empty( $user_screen_name ) ) {
                 $screen_name = $user_screen_name;
