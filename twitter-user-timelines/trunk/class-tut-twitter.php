@@ -170,9 +170,10 @@ class Tut_Twitter {
 
         // Set API request parameters
         $params = array(
-            'count' => $count,
+            'count' => 50,
             'slug' => $list_name,
             'owner_screen_name' => $owner,
+            'include_rts' => false
         );
 
         $params = http_build_query( $params );
@@ -191,6 +192,7 @@ class Tut_Twitter {
 
         return false;
     }
+
 
 }
 
