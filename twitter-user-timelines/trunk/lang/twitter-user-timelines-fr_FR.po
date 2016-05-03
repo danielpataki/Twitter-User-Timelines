@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter User Timelines 1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-21 16:23+0100\n"
+"PO-Revision-Date: 2016-05-03 15:20+0100\n"
+"Last-Translator: Xam1311 <github@designmyco.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-tut-twitter.php:94
+msgid "Your consumer key or consumer secret is incorrect"
+msgstr "Votre clé client ou la clé secrète est incorrecte"
+
+#: ../class-twitter-user-timeline.php:31
+msgid "Add an arbitrary twitter timeline or tie it to any user profile"
+msgstr ""
+"Ajouter une ligne chronologique arbitraire ou lier à n'importe quel profil"
+
+#: ../class-twitter-user-timeline.php:34
+msgid "Twitter User Timeline"
+msgstr "Ligne chronologique Twitter de l'utilisateur"
+
+#: ../class-twitter-user-timeline.php:62
+#, php-format
+msgid ""
+"Twitter only allows access to its API with authentication. This means you "
+"must create a Twitter application and define the consumer key and consumer "
+"secret of your application in the <a href=\"%s\">plugin settings</a>"
+msgstr ""
+"Twitter autorise seulement les accès à son API avec une authentification. "
+"Cela signifie que vous devez créer une application Twitter et indiquer la "
+"clé client et la clé secrète de votre application dans  <a href=\"%s"
+"\">paramètres plugin</a>"
+
+#: ../class-twitter-user-timeline.php:78
+msgid "On Posts"
+msgstr "Sur les articles"
+
+#: ../class-twitter-user-timeline.php:79
+msgid "On Pages"
+msgstr "Sur les pages"
+
+#: ../class-twitter-user-timeline.php:80
+msgid "Author Archive"
+msgstr "Archives de l'auteur"
+
+#: ../class-twitter-user-timeline.php:86
+msgid "Title:"
+msgstr "Titre:"
+
+#: ../class-twitter-user-timeline.php:91
+msgid "Tweets To Show:"
+msgstr "Tweets à affichier:"
+
+#: ../class-twitter-user-timeline.php:96
+msgid "Default Twitter Username:"
+msgstr "Identifiant Twitter par défaut:"
+
+#: ../class-twitter-user-timeline.php:101
+msgid "Show Author Tweets:"
+msgstr "Afficher les tweets de l'auteur"
+
+#: ../class-twitter-user-timeline.php:113
+msgid "Twitter Field:"
+msgstr "Champ Twitter"
+
+#: ../class-twitter-user-timeline.php:118
+msgid "Theme:"
+msgstr "Theme:"
+
+#: ../class-twitter-user-timeline.php:120
+msgid "Light"
+msgstr "Clair"
+
+#: ../class-twitter-user-timeline.php:122
+msgid "Dark"
+msgstr "Sombre"
+
+#: ../twitter-user-timelines.php:73
+msgid "Twitter Timelines"
+msgstr "Lignes chronologique Twitter"
+
+#: ../twitter-user-timelines.php:109
+msgid "Twitter User Timelines"
+msgstr "Lignes chronologique utilisateur"
+
+#: ../twitter-user-timelines.php:116
+msgid "Twitter Consumer Key"
+msgstr "Clé client Twitter"
+
+#: ../twitter-user-timelines.php:121
+msgid "Twitter Consumer Secret"
+msgstr "Clé secrète client Twitter"
+
+#: ../twitter-user-timelines.php:136
+msgid ""
+"We tried to verify your consumer key and secret but it seems they are "
+"incorrect. Make sure to copy-paste them from Twitter exactly."
+msgstr ""
+"Nous avons essayé de vérifier votre clé client et clé secrète mais il semble "
+"qu'elles soient incorrectes. Assurez vous de copier-coller à l'identique les "
+"clés du site Twitter."
