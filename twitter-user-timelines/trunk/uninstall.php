@@ -3,7 +3,7 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
-
+global $wpdb;
 // Delete all transients we created
 $sql = "SELECT `option_name` AS `name`, `option_value` AS `value`
         FROM  $wpdb->options
